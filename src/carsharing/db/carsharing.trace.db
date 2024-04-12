@@ -1,0 +1,24 @@
+2024-04-12 10:02:52 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CUSTOMER" not found; SQL statement:
+SELECT * FROM CUSTOMER [42102-200]
+2024-04-12 10:02:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CUSTOMER" not found; SQL statement:
+SELECT * FROM CUSTOMER [42102-200]
+2024-04-12 10:03:11 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CUSTOMER" not found; SQL statement:
+SELECT * FROM CUSTOMER [42102-200]
+2024-04-12 10:03:18 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CUSTOMER" not found; SQL statement:
+INSERT INTO CUSTOMER(NAME, RENTED_CAR_ID) VALUES(?, NULL) [42102-200]
+2024-04-12 10:03:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CUSTOMER" not found; SQL statement:
+INSERT INTO CUSTOMER(NAME, RENTED_CAR_ID) VALUES(?, NULL) [42102-200]
+2024-04-12 10:04:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAR" not found; SQL statement:
+CREATE TABLE IF NOT EXISTS CUSTOMER (
+    ID INT PRIMARY KEY AUTO_INCREMENT,
+    NAME VARCHAR(30) UNIQUE NOT NULL,
+    RENTED_CAR_ID INT NULL,
+    CONSTRAINT FK_CAR FOREIGN KEY (RENTED_CAR_ID)
+    REFERENCES CAR (ID)
+); [42102-200]
